@@ -1,0 +1,30 @@
+mat-form-field{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+
+}
+
+mat-card{
+  padding-bottom: 1rem;
+
+}
+
+
+label{
+  font-size: 1.5rem;
+  color: #035173;
+  padding: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.btn-item {
+  margin: 2rem; 
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type="range"] {
+  width:400px;
+}
+

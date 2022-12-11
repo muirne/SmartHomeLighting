@@ -1,0 +1,59 @@
+<mat-card class="item_form">
+  <form (submit)="onSavePost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="item"
+        [ngModel]="post?.item"
+        required
+        minlength="3"
+        placeholder="Item name"
+        #item="ngModel"
+      />
+      <mat-error *ngIf="item.invalid">Please enter an item name.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="location"
+        [ngModel]="post?.location"
+        required
+        placeholder="location"
+        #location="ngModel"
+      />
+      <mat-error *ngIf="location.invalid"
+        >Please enter an item location.</mat-error
+      >
+    </mat-form-field>
+
+    <mat-card>
+      <mat-card-content>
+        <!-- <input type="checkbox" id="scales" name="scales" checked />
+        <label for="scales">on/off</label> -->
+        <mat-slide-toggle> <label for="scales">on/off</label></mat-slide-toggle>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- color -->
+    <mat-card>
+      <mat-card-content
+        ><input type="color" id="head" name="head" value="4093b6" />
+        <label for="head">choose color</label></mat-card-content
+      >
+    </mat-card>
+
+    <!-- brightness -->
+    <mat-card>
+      <mat-card-content
+        ><input type="range" id="volume" name="volume" min="0" max="12" />
+        <label for="volume">choose brightness</label></mat-card-content
+      >
+    </mat-card>
+
+    <div class="btn-item">
+      <button mat-fab extended color="primary" type="submit">Save Item</button>
+    </div>
+  </form>
+</mat-card>

@@ -1,0 +1,30 @@
+mat-toolbar{
+  background:
+  linear-gradient(
+    rgba(0, 147, 233, 1),
+    rgba(128, 208, 199, 1));    
+
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 700;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
